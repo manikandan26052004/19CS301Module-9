@@ -18,6 +18,8 @@ STEP 6: Print the result.
 STEP 7 : Stop.
 ### Program:
 ```
+NAME: MANIKANDAN R
+REG NO: 212222220022
 def create_matrix(n,m):
          M = []
          for i in range(n):
@@ -49,7 +51,7 @@ print(C)
 ### Result: Thus, the given program is implemented and executed successfully .
 
 ### EX: 9.2 LIST COMPREHENSION
-### Aim: To Write a Python class program to generate all even numbers between 200 and 300 and store in a list using list comprehension.
+### Aim: To Write a Python class program to store all odd numbers between 500 and 600 in a reverse order  using list comprehension.
 ### Algorithm:
 STEP 1: Start.
 
@@ -59,7 +61,7 @@ STEP 3: Create variable a,b, and c for upper limit,lower limit and condition.
 
 STEP 4: Intialise the values in the class.
 
-STEP 5 : Define a method and using list comprehension calculate the result.
+STEP 5 : Define a method and using list comprehension calculate the result in reverse order.
 
 STEP 6: Print the result.
 
@@ -67,24 +69,23 @@ STEP 7 : Stop.
 
 ### Program:
 ```
-class program:
+class Generate:
+    def __init__(self, first,d,last):
+        self.first = first
+        self.d = d
+        self.last=last
+    def Ap_generate(self):
+        L=[i for i in range(self.last-1,self.first,self.d)]
+        return L
 
-      def  __init__(self,a,b,c):
-                self.a=a
-                self.b=b
-                self.c=c
-        def display(self):
-               even = [i for i in range(self.a,self.c+1,self.b)]
-               print(even)
-a = int(input())
-b = int(input())
-c = int(input())
 
-obj = program(a,b,c)
-obj.display()
+Series = Generate(500,-2,600)
+
+print(Series.Ap_generate())
+
 ```
 ### Output:
- ![image](https://github.com/user-attachments/assets/a9707d46-2d47-4472-a6b3-b407a6f6ef71)
+ ![image](https://github.com/23013357/19CS301Module-9/blob/main/w.png)
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
